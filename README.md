@@ -10,7 +10,7 @@ print('hello world')
 nzt = input('Enter your name: ')
 print("Hello",nzt)
 
-Windows PowerShell terminal
+## Windows PowerShell terminal
 
 hello world
 (.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py pythonhelloworld.py
@@ -24,3 +24,27 @@ Hello Brendan
 hello world
 Enter your name: Chuck
 Hello Chuck
+
+# Video 4
+xh = input("Enter Hours: ")
+xr = input("Enter Rate: ")
+xp = float(xh) * float(xr)
+print("Pay:",xp)
+
+## Windows PowerShell terminal
+
+Enter Hours: 10
+Enter Rate: 5
+Traceback (most recent call last):
+  File "C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python\pythonhelloworld.py", line 3, in <module>
+    xp = xh * xr
+         ~~~^~~~
+TypeError: can't multiply sequence by non-int of type 'str'
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py pythonhelloworld.py
+Enter Hours: 10
+Enter Rate: 10
+Pay: 100.0
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py pythonhelloworld.py
+Enter Hours: 35
+Enter Rate: 2.75
+Pay: 96.25
