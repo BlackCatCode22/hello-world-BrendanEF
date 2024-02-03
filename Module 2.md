@@ -123,3 +123,56 @@ Enter Hours: 10
 Enter Rate: ten
 Error, please enter numeric input
 (.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python>
+
+# Video 3 Functions
+
+`def computepay(hours, rate) :`
+    `# print("In computepay", hours, rate)`
+    `if hours > 40:`
+        `reg = rate * hours`
+        `otp = (hours - 40.0) * (rate * 0.5)`
+       `pay = reg + otp`
+    `else:`
+        `pay = hours * rate`
+    `# print("Returning",pay)`
+    `return pay`
+
+`sh = input("Enter Hours: ")`
+`sr = input("Enter Rate: ")`
+`fh = float(sh)`
+`fr = float(sr)`
+
+`xp = computepay(fh, fr)`
+
+`print("Pay:",xp)`
+
+## Windows PowerShell Terminal
+
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py functionsModule2.py
+Enter Rate: 10
+Pay: 100.0
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py functionsModule2.py
+Enter Hours: 10
+Pay: 100.0
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py functionsModule2.py
+Enter Hours: 40
+Enter Rate: 10
+In computepay 40.0 10.0
+Pay: 400.0
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py functionsModule2.py
+Enter Rate: 10
+In computepay 40.0 10.0
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py functionsModule2.py
+Enter Hours: 10
+Enter Rate: 15
+In computepay 10.0 15.0
+Returning 150.0
+Pay: 150.0
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py functionsModule2.py
+Enter Hours: 40
+Enter Rate: 10
+Pay: 400.0
+(.venv) PS C:\Users\Brendan\PycharmProjects\CIT95SPRING2024\CIT95python> py functionsModule2.py
+Enter Hours: 50
+Enter Rate: 10
+Pay: 550.0
